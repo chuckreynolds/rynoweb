@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rynoweb — A Web Technology Consultancy</title>
+<meta name="description" content="Rynoweb is a privately held web technology consultancy founded in 2000 by Chuck Reynolds. Engineering, APIs, technical SEO and performance, data and analytics, product strategy, and agentic AI workflows.">
+<link rel="canonical" href="https://rynoweb.com/">
+<meta name="theme-color" content="#12232e">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rynoweb.com/">
+<meta property="og:title" content="Rynoweb — A Web Technology Consultancy">
+<meta property="og:description" content="A privately held web technology consultancy since 2000. We build your internet.">
+<meta name="twitter:card" content="summary">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-72QLQ9PQWY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -8,39 +19,118 @@
   gtag('js', new Date());
   gtag('config', 'G-72QLQ9PQWY');
 </script>
-<meta charset='UTF-8'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rynoweb - A Web Technology Consultancy</title>
-<meta name="description" content="Chuck Reynolds - Web technology consultant and founder of Rynoweb, providing expert web development and digital solutions since 2000.">
 <style>
+:root {
+  color-scheme: dark;
+  --bg: #10202b;
+  --bg-accent: #1b3547;
+  --text: #c3ced6;
+  --text-strong: #eef4f8;
+  --text-dim: #7f939f;
+  --rule: #24404f;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
 body {
-  font-family: system-ui, sans-serif;
-  font-size: 18px;
-  background-color:#12232e;
-  color:#b4b4b4;
-  margin:50px 20px;
+  margin: 0;
+  padding: clamp(2.5rem, 10vw, 6rem) clamp(1.25rem, 6vw, 2rem);
+  background: var(--bg);
+  background-image: radial-gradient(120% 90% at 12% 0%, var(--bg-accent) 0%, var(--bg) 62%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1.0625rem, 0.95rem + 0.55vw, 1.1875rem);
+  line-height: 1.65;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-.centered {
-  margin:0 auto;
-  max-width:700px;
+
+main {
+  max-width: 38rem;
+  margin-inline: auto;
 }
+
+h1 {
+  margin: 0 0 1.75rem;
+  font-size: clamp(2.25rem, 1.6rem + 3.2vw, 3.5rem);
+  line-height: 1.05;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  color: var(--text-strong);
+}
+
+p { margin: 0 0 1.5rem; text-wrap: pretty; }
+
+.lede {
+  font-size: 1.15em;
+  line-height: 1.45;
+  color: var(--text-strong);
+  letter-spacing: -0.011em;
+  text-wrap: balance;
+}
+
+.note {
+  margin-bottom: 2.25rem;
+  color: var(--text-strong);
+  font-weight: 550;
+}
+
+.contact {
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--text-dim);
+}
+
+.contact p { margin: 0 0 0.5rem; }
+.contact p:last-child { margin-bottom: 0; }
+
 a {
-  color:#b4b4b4;
-  text-decoration:underline;
-  transition:color 0.2s;
+  color: var(--text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--rule);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
-a:hover {
-  color:#fff;
+
+a:hover, a:focus-visible {
+  color: var(--text-strong);
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--text-strong);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.01ms !important; }
 }
 </style>
+</head>
 <body>
-<div class="centered">
+<main>
   <h1>Rynoweb</h1>
-  <p>A privately held web technology consultancy since 2000.<br>
+
+  <p class="lede">A privately held web technology consultancy since 2000.<br>
   We build your internet.</p>
-  <p>Say hello[at]rynoweb.com</p>
-  <p>Proprietor: <a href="https://chuckreynolds.com?utm_source=rynoweb&utm_medium=website&utm_campaign=homepage">Chuck Reynolds</a></p>
-</div>
+
+  <p>Twenty-five years of it: front end and back end engineering, APIs, technical SEO
+  and web performance, data and analytics, product strategy, and agentic AI workflows
+  and the tooling around them. Every engagement over the years has made the next one
+  sharper.</p>
+
+  <p class="note">Selectively available.</p>
+
+  <div class="contact">
+    <p>Say hello[at]rynoweb.com</p>
+    <p>Proprietor: <a href="https://chuckreynolds.com?utm_source=rynoweb&amp;utm_medium=website&amp;utm_campaign=homepage">Chuck Reynolds</a></p>
+  </div>
+</main>
 <!--
   Well hello there, you view source too? nice! I'm Chuck, nice to meet ya. say hi.
   Find me @chuckreynolds || linkedin.com/in/chuckreynolds
